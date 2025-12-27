@@ -20,3 +20,18 @@ dependencies:
   - jupyter
   - mystmd
   - nodejs=18  # For mystmd CLI
+  - rdflib
+  - rocrate
+  - openpyxl
+  - requests
+  - arxiv
+  - biopython 
+  - ipywidgets
+  - scikit-learn
+  - pandas
+  - pip:
+      - nanopub
+      - rohub
+      - pyalex
+      - asreview
+      - semanticscholar
