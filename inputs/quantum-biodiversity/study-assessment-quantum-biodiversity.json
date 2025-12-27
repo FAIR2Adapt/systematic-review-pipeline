@@ -1,0 +1,37 @@
+{
+  "_comment": "Study Assessment Dataset nanopub configuration - Quantum Biodiversity Review",
+  "_template": "https://w3id.org/np/RAwQj3SNiopwPrHXfoRT2JtYZSt-5JsDHjBDW6nYz_rDE",
+  "_created": "2025-12-27",
+
+  "author": {
+    "orcid": "0000-0002-1784-2920",
+    "name": "Anne Fouilloux"
+  },
+
+  "systematic_review": "https://w3id.org/np/RA8B3ptXUOsN7obpkFGtA0FBmsh0OnID53wOsUIpSKTcg",
+
+  "assessment": {
+    "label": "Study Assessment Dataset: Quantum Computing Applications in Biodiversity Research",
+    "creation_date": "2025-12-27",
+
+    "eligibility_criteria": "Exploratory scoping review with inclusive screening. INCLUSION: Studies applying quantum computing methods to biodiversity or ecological research; Studies on biodiversity/ecology topics that could potentially benefit from quantum computing approaches; Studies on quantum algorithms relevant to environmental modeling, optimization, or data analysis; Peer-reviewed articles, preprints, and conference papers; Publications from 2015-2025; English language publications. EXCLUSION: Clearly off-topic papers (neither quantum computing nor biodiversity related); Conference abstracts only; Non-English publications; Retracted papers. NOTE: Screening used subjective judgment to identify papers with potential relevance to the intersection of quantum computing and biodiversity, including biodiversity studies that might benefit from quantum approaches even without explicit quantum computing content.",
+
+    "assessment_technique": "AI-assisted systematic screening using active learning. Tool: ASReview LAB v2.2 (https://asreview.nl/). Model: Naive Bayes classifier with TF-IDF feature extraction. Screening type: Title and abstract screening. Screeners: 1. Stopping rule: Consecutive irrelevant threshold - stopped after sustained pattern of irrelevant papers. Estimated recall: >95%.",
+
+    "study_characteristics": "Time range: 2015-2025. Databases searched: OpenAlex, arXiv, PubMed, Europe PMC, Semantic Scholar. Domains: Quantum computing, Quantum machine learning, Biodiversity, Conservation biology, Ecological modeling, Species distribution modeling. Study types: Original research, Method development, Application studies, Computational experiments. Total records: 1649. Records screened: 569. Records included: 283. Records excluded: 286. Not screened (AI stopped): 1080. Nanopubs published: 238 (45 skipped due to missing DOIs).",
+
+    "extraction_method": "Automated extraction from academic database APIs with manual verification. Data extracted: Title, Authors, Year, DOI, Abstract, Journal/Source. Tools used: OpenAlex API, arXiv API, PubMed E-utilities, Europe PMC API, Semantic Scholar API, Zotero reference manager.",
+
+    "study_results": "283 studies identified as potentially relevant to quantum computing applications in biodiversity research. 238 studies with DOIs published as individual Study Inclusion nanopublications. Studies span quantum algorithms, quantum machine learning, ecological modeling, species identification, and conservation optimization.",
+
+    "quality_assessment": "AI-assisted prioritization with subjective human decision-making. ASReview LAB uses active learning to prioritize papers most likely to be relevant, while human reviewer makes all inclusion/exclusion decisions based on subjective assessment of potential relevance. Bias considerations: Single screener's subjective interpretation of 'potential relevance'; Active learning may miss relevant papers in unexplored regions of feature space; No inter-rater reliability assessment; English language bias; Inclusive approach may result in heterogeneous study population.",
+
+    "dataset_file_location": "https://zenodo.org/records/18070378",
+
+    "limitations": "Single screener with subjective judgment - no independent verification. Inclusive screening approach: some included papers may not directly address quantum computing. AI-assisted screening may have missed relevant studies in unscreened portion. Limited to English language publications. Quantum computing and biodiversity are rapidly evolving fields - findings may become outdated. Interdisciplinary nature makes comprehensive coverage challenging. 45 included studies lacked DOIs and could not be published as nanopubs."
+  },
+
+  "output": {
+    "filename": "quantum-biodiversity-study-assessment.trig"
+  }
+}

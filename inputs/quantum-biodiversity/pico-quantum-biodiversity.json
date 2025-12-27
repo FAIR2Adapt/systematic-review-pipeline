@@ -1,0 +1,52 @@
+{
+  "author": {
+    "orcid": "0000-0002-1784-2920",
+    "name": "Anne Fouilloux"
+  },
+  "pico": {
+    "title": "Quantum Computing Applications for Biodiversity Research and Conservation: A Scoping Review",
+    "population": "Biodiversity research domains including species distribution modeling, conservation planning, population genetics, ecological network analysis, and ecosystem dynamics simulation",
+    "intervention": "Quantum computing approaches and quantum-inspired algorithms, including quantum machine learning, quantum optimization (e.g., quantum annealing, QAOA), quantum-enhanced MCMC, and quantum community detection methods",
+    "comparison": "Classical computational methods including traditional machine learning, simulated annealing, genetic algorithms, and standard statistical approaches (MCMC, maximum likelihood, Bayesian methods)",
+    "outcome": "Characterization of application domains, computational advantages demonstrated, hardware requirements, scalability assessments, and readiness for operational biodiversity research and conservation practice",
+    "research_question": "What quantum computing and quantum-inspired approaches have been applied or proposed for biodiversity research and conservation, and what evidence exists for their computational advantages over classical methods?",
+    "question_type": "descriptive",
+    "rationale": "Quantum computing is emerging as a potential paradigm shift for ecology (Sherley et al. 2023, Clenet et al. 2025). Applications include conservation planning optimization (Microsoft/Marxan), species distribution modeling, population genetics, and ecological network analysis. This scoping review maps the current landscape to identify promising directions and gaps for the biodiversity research community."
+  },
+  "output": {
+    "filename": "quantum-biodiversity-pico"
+  },
+  "metadata": {
+    "keywords": [
+      "quantum computing",
+      "quantum machine learning",
+      "biodiversity",
+      "conservation planning",
+      "species distribution modeling",
+      "ecological networks",
+      "population genetics",
+      "optimization"
+    ],
+    "related_work": [
+      {
+        "citation": "Clenet et al. 2025",
+        "title": "Addressing ecological challenges from a quantum computing perspective",
+        "arxiv": "2504.03866"
+      },
+      {
+        "citation": "Sherley et al. 2023",
+        "title": "Quantum computing: a new paradigm for ecology",
+        "journal": "Trends in Ecology & Evolution"
+      },
+      {
+        "citation": "Frontiers 2025",
+        "title": "The promise of quantum computing for population genetics and molecular ecology"
+      },
+      {
+        "citation": "Srivastava et al. 2021",
+        "title": "Quantum inspired community detection for analysis of biodiversity change",
+        "journal": "Scientific Reports"
+      }
+    ]
+  }
+}

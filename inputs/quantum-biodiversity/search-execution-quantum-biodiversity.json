@@ -1,0 +1,80 @@
+{
+  "_instructions": "Fill in the placeholder values (marked with XXX or 0) after executing the searches. Database search counts should come from the quantum-biodiversity-search-execution-tracker.xlsx spreadsheet.",
+  "author": {
+    "orcid": "0000-0002-1784-2920",
+    "name": "Anne Fouilloux"
+  },
+  "search_execution_dataset": {
+    "label": "Quantum Computing for Biodiversity - Search Execution Results",
+    "part_of": "https://w3id.org/np/RA8B3ptXUOsN7obpkFGtA0FBmsh0OnID53wOsUIpSKTcg",
+    "creation_date": "2025-12-26",
+    "db_searches": [
+      {
+        "database_url": "https://openalex.org/",
+        "database_label": "OpenAlex",
+        "search_query": "(quantum computing OR quantum machine learning OR QML OR QAOA OR quantum annealing) AND (biodiversity OR conservation OR species distribution OR ecological network OR population genetics)",
+        "filters": "2015-2025",
+        "results_count": 467,
+        "export_format": "BibTeX",
+        "notes": "Best free replacement for Scopus/WoS"
+      },
+      {
+        "database_url": "https://arxiv.org/",
+        "database_label": "arXiv",
+        "search_query": "(quantum computing OR quantum machine learning OR QML OR QAOA OR quantum annealing) AND (biodiversity OR conservation OR species distribution OR ecological network OR population genetics)",
+        "filters": "2015-2025; Categories: quant-ph, cs.LG, cs.AI, q-bio",
+        "results_count": 178,
+        "export_format": "BibTeX",
+        "notes": "Essential for quantum computing preprints"
+      },
+      {
+        "database_url": "https://www.semanticscholar.org/",
+        "database_label": "Semantic Scholar",
+        "search_query": "quantum computing biodiversity conservation species distribution",
+        "filters": "2015-2025; Fields: CS, Biology, Environmental Science",
+        "results_count": 621,
+        "export_format": "BibTeX",
+        "notes": "AI-enhanced search"
+      },
+      {
+        "database_url": "https://pubmed.ncbi.nlm.nih.gov/",
+        "database_label": "PubMed",
+        "search_query": "(quantum computing[Title/Abstract] OR quantum machine learning[Title/Abstract] OR quantum annealing[Title/Abstract]) AND (biodiversity[Title/Abstract] OR conservation[Title/Abstract] OR species distribution[Title/Abstract] OR population genetics[Title/Abstract])",
+        "filters": "2015-present; English",
+        "results_count": 4,
+        "export_format": "RIS/NBIB",
+        "notes": "Biomedical focus"
+      },
+      {
+        "database_url": "https://ieeexplore.ieee.org/",
+        "database_label": "IEEE Xplore (OA only)",
+        "search_query": "(\"quantum computing\" OR \"quantum machine learning\" OR \"QML\" OR \"QAOA\" OR \"quantum annealing\") AND (\"biodiversity\" OR \"conservation\" OR \"species distribution\" OR \"ecological network\" OR \"population genetics\")",
+        "filters": "2015-2025; Open Access Only",
+        "results_count": 0,
+        "export_format": "RIS",
+        "notes": "OA content only due to paywall"
+      },
+      {
+        "database_url": "https://europepmc.org/",
+        "database_label": "Europe PMC",
+        "search_query": "(quantum computing OR quantum machine learning) AND (biodiversity OR conservation OR species distribution)",
+        "filters": "2015-2025; Open Access",
+        "results_count": 597,
+        "export_format": "RIS",
+        "notes": "Complements PubMed with European repository content"
+      }
+    ],
+    "deduplication_methodology": "Records from all 6 databases combined using Zotero. Automatic deduplication on DOI and title fields. Manual review of potential duplicates (similar titles, matching authors). Expected high overlap between OpenAlex, Semantic Scholar, and PubMed.",
+    "review_methodology": "Single reviewer screening with validation by second reviewer on 20% sample given emerging interdisciplinary nature of the topic.",
+    "screening_methodology": "Two-stage screening: (1) Title and abstract screening against PICO criteria - must address quantum computing methods AND biodiversity/conservation applications, (2) Full-text review for methodological rigor and relevance. Exclusions: opinion pieces, editorials without methods, theoretical quantum physics without biological application.",
+    "screened_record_count": "1616",
+    "fulltext_screened_record_count": "XXX",
+    "final_included_study_count": "XXX",
+    "exclusion_breakdown": "Title/abstract exclusions: Not about quantum computing (XXX), Not about biodiversity/conservation (XXX), Not primary research (XXX). Full-text exclusions: Full text not available (XXX), Not in English (XXX), Outside date range (XXX), Other (XXX).",
+    "dataset_file_location": "",
+    "limitations": "Limitations: (1) Scopus and Web of Science replaced with OpenAlex and Semantic Scholar due to subscription access requirements - OpenAlex provides comparable bibliographic coverage, (2) IEEE Xplore restricted to Open Access content only due to paywall constraints - may underrepresent paywalled IEEE conference proceedings, (3) Emerging field with inconsistent terminology may affect recall, (4) Grey literature (technical reports, working papers) not systematically searched."
+  },
+  "output": {
+    "filename": "quantum-biodiversity-search-execution"
+  }
+}
