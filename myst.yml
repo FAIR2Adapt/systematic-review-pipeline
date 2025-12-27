@@ -25,7 +25,13 @@ project:
   date: 2025-05-16
   toc:
     - file: index.md
-    - file: notebooks/notebook.ipynb
+    - file: notebooks/pico-nanopub-from-json.ipynb
+    - file: notebooks/search-strategy-nanopub-from-json.ipynb
+    - file: notebooks/search-execution-api-queries.ipynb
+    - file: notebooks/search-execution-nanopub-from-json.ipynb
+    - file: notebooks/asreview-to-nanopub.ipynb
+    - file: notebooks/study-inclusion-nanopub-asreview.ipynb
+    - file: notebooks/study-assessment-nanopub-from-json.ipynb
   exports:
     - format: pdf
       template: curvenote
