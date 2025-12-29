@@ -2,6 +2,8 @@
 
 A complete workflow for conducting PRISMA-compliant systematic reviews using nanopublications for transparent, traceable, and machine-readable research documentation.
 
+![Image to illustrate Quantum Computing for Biodiversity](Quantum-and-Biodiversity-Perplexity.png)
+
 ## Overview
 
 This pipeline implements a 5-stage PRISMA workflow:
