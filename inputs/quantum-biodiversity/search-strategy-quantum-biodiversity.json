@@ -5,7 +5,7 @@
   },
   "search_strategy": {
     "label": "Quantum Computing for Biodiversity - Literature Search",
-    "part_of": "https://w3id.org/np/RASr_5SP0NhXfz43auGCrxon4_kUUj0AfA56gW13Yfqak",
+    "part_of": "https://w3id.org/spaces/sciencelive/quantum-biodiversity-review",
     "databases": [
       "https://pubmed.ncbi.nlm.nih.gov/",
       "https://www.scopus.com/",
