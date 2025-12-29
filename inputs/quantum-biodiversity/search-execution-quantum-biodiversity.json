@@ -1,12 +1,12 @@
 {
-  "_instructions": "Fill in the placeholder values (marked with XXX or 0) after executing the searches. Database search counts should come from the quantum-biodiversity-search-execution-tracker.xlsx spreadsheet.",
+  "_instructions": "Updated with ASReview screening results from December 2025.",
   "author": {
     "orcid": "0000-0002-1784-2920",
     "name": "Anne Fouilloux"
   },
   "search_execution_dataset": {
     "label": "Quantum Computing for Biodiversity - Search Execution Results",
-    "part_of": "https://w3id.org/np/RASr_5SP0NhXfz43auGCrxon4_kUUj0AfA56gW13Yfqak",
+    "part_of": "https://w3id.org/spaces/sciencelive/quantum-biodiversity-review",
     "creation_date": "2025-12-26",
     "db_searches": [
       {
@@ -66,13 +66,13 @@
     ],
     "deduplication_methodology": "Records from all 6 databases combined using Zotero. Automatic deduplication on DOI and title fields. Manual review of potential duplicates (similar titles, matching authors). Expected high overlap between OpenAlex, Semantic Scholar, and PubMed.",
     "review_methodology": "Single reviewer screening with validation by second reviewer on 20% sample given emerging interdisciplinary nature of the topic.",
-    "screening_methodology": "Two-stage screening: (1) Title and abstract screening against PICO criteria - must address quantum computing methods AND biodiversity/conservation applications, (2) Full-text review for methodological rigor and relevance. Exclusions: opinion pieces, editorials without methods, theoretical quantum physics without biological application.",
-    "screened_record_count": "1616",
-    "fulltext_screened_record_count": "XXX",
-    "final_included_study_count": "XXX",
-    "exclusion_breakdown": "Title/abstract exclusions: Not about quantum computing (XXX), Not about biodiversity/conservation (XXX), Not primary research (XXX). Full-text exclusions: Full text not available (XXX), Not in English (XXX), Outside date range (XXX), Other (XXX).",
-    "dataset_file_location": "",
-    "limitations": "Limitations: (1) Scopus and Web of Science replaced with OpenAlex and Semantic Scholar due to subscription access requirements - OpenAlex provides comparable bibliographic coverage, (2) IEEE Xplore restricted to Open Access content only due to paywall constraints - may underrepresent paywalled IEEE conference proceedings, (3) Emerging field with inconsistent terminology may affect recall, (4) Grey literature (technical reports, working papers) not systematically searched."
+    "screening_methodology": "AI-assisted systematic screening using ASReview LAB v2.2. Model: Naive Bayes classifier with TF-IDF feature extraction. Two-stage approach: (1) Title and abstract screening against PICO criteria using active learning prioritization, (2) Human reviewer makes all inclusion/exclusion decisions. Stopping rule: Consecutive irrelevant threshold - stopped after sustained pattern of irrelevant papers. Estimated recall: >95%.",
+    "screened_record_count": "1649",
+    "fulltext_screened_record_count": "283",
+    "final_included_study_count": "238",
+    "exclusion_breakdown": "Title/abstract screening: 569 records actively screened, 286 excluded as not relevant, 1080 not screened (AI stopping rule reached after sustained pattern of irrelevant papers). Final inclusion: 283 studies passed screening, 45 excluded from nanopublication (no DOI available), 238 published as nanopublications.",
+    "dataset_file_location": "https://doi.org/10.5281/zenodo.18070377",
+    "limitations": "Limitations: (1) Scopus and Web of Science replaced with OpenAlex and Semantic Scholar due to subscription access requirements - OpenAlex provides comparable bibliographic coverage, (2) IEEE Xplore restricted to Open Access content only due to paywall constraints - may underrepresent paywalled IEEE conference proceedings, (3) Emerging field with inconsistent terminology may affect recall, (4) Grey literature (technical reports, working papers) not systematically searched, (5) Single screener with AI-assisted prioritization - no inter-rater reliability assessment, (6) 45 included studies lacked DOIs and could not be published as nanopublications."
   },
   "output": {
     "filename": "quantum-biodiversity-search-execution"
