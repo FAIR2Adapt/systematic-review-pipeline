@@ -1,0 +1,15 @@
+{
+  "author": {
+    "orcid": "0000-0002-1784-2920",
+    "name": "Anne Fouilloux"
+  },
+  "link": {
+    "systematic_review_uri": "https://w3id.org/spaces/sciencelive/quantum-biodiversity-review",
+    "research_questions": [
+      "https://w3id.org/np/RASr_5SP0NhXfz43auGCrxon4_kUUj0AfA56gW13Yfqak"
+    ]
+  },
+  "output": {
+    "filename": "link-pico-quantum-biodiversity"
+  }
+}
