@@ -13,10 +13,15 @@
       "https://www.webofscience.com/"
     ],
     "search_terms": [
-      "http://purl.obolibrary.org/obo/NCIT_C17296",
-      "http://purl.obolibrary.org/obo/ENVO_01001110",
-      "http://purl.obolibrary.org/obo/NCIT_C18881",
-      "http://purl.obolibrary.org/obo/STATO_0000225"
+      "https://www.wikidata.org/wiki/Q176555",
+      "https://www.wikidata.org/wiki/Q17995793",
+      "https://www.wikidata.org/wiki/Q18811578",
+      "https://www.wikidata.org/wiki/Q938141",
+      "https://www.wikidata.org/wiki/Q47041",
+      "https://www.wikidata.org/wiki/Q832237",
+      "https://www.wikidata.org/wiki/Q250388",
+      "https://www.wikidata.org/wiki/Q5333246",
+      "https://www.wikidata.org/wiki/Q31151"
     ],
     "time_period": {
       "start": "2015-01-01",

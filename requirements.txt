@@ -49,4 +49,4 @@ asreview
 ipywidgets 
 scikit-learn 
 pandas
-
+pymupdf
