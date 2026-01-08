@@ -1,0 +1,130 @@
+{
+  "author": {
+    "orcid": "0000-0002-1784-2920",
+    "name": "Anne Fouilloux"
+  },
+  "pico": {
+    "title": "Federated Learning for Satellite Image Classification: A Scoping Review",
+    "population": "Multi-source satellite imagery datasets held by different organizations including space agencies (ESA, NASA, JAXA), commercial providers (Planet, Maxar, Airbus), national mapping agencies, and research institutions, covering applications such as land cover classification, object detection, change monitoring, and disaster response",
+    "intervention": "Federated learning approaches enabling collaborative model training without sharing raw imagery, including horizontal federated learning, vertical federated learning, federated transfer learning, and privacy-enhanced variants with differential privacy or secure aggregation",
+    "comparison": "Centralized training with pooled data, transfer learning from publicly available pre-trained models, independent training without collaboration, and traditional data sharing agreements",
+    "outcome": "Model accuracy and performance metrics (F1, IoU, mAP), communication efficiency (bandwidth requirements, convergence speed), privacy preservation (data leakage risk, gradient inversion attack resistance), scalability across heterogeneous sensors and resolutions, and practical deployment feasibility",
+    "research_question": "For satellite imagery classification tasks involving multiple data holders, how do federated learning approaches compare to centralized training and independent training in achieving model accuracy while preventing raw data exposure and enabling cross-organizational collaboration?",
+    "question_type": "effectiveness",
+    "rationale": "Earth observation data is distributed across numerous organizations with varying data sharing restrictions due to commercial interests, national security concerns, and licensing constraints. Federated learning offers a paradigm where collaborative AI model development can occur without centralizing sensitive imagery. As EO-based AI applications expand, understanding the effectiveness, limitations, and practical requirements of federated approaches is critical for space agencies, commercial providers, and research consortia seeking to leverage collective data assets while respecting data governance constraints."
+  },
+  "sub_questions": [
+    {
+      "id": "SQ1",
+      "title": "Accuracy Comparison Across Federation Scenarios",
+      "population": "Satellite image classification tasks with data distributed across 3-10 organizations",
+      "intervention": "Federated averaging (FedAvg) and variants (FedProx, FedBN) for satellite imagery",
+      "comparison": "Centralized training baseline with equivalent total data volume",
+      "outcome": "Classification accuracy gap, convergence rounds required, performance on heterogeneous vs. homogeneous data distributions",
+      "research_question": "What is the accuracy gap between federated learning and centralized training for satellite image classification, and how does data heterogeneity across organizations affect this gap?"
+    },
+    {
+      "id": "SQ2",
+      "title": "Privacy Guarantees in EO Federated Learning",
+      "population": "Federated learning systems processing satellite imagery with sensitive content (infrastructure, defense, commercial assets)",
+      "intervention": "Privacy-enhanced federated learning (differential privacy, secure aggregation, gradient compression)",
+      "comparison": "Standard federated averaging without privacy enhancements",
+      "outcome": "Resistance to gradient inversion attacks, membership inference attack success rate, formal privacy guarantees (epsilon values achieved), accuracy trade-off",
+      "research_question": "How effective are privacy-enhancing techniques in protecting sensitive satellite imagery during federated learning, and what accuracy costs do they impose?"
+    },
+    {
+      "id": "SQ3",
+      "title": "Cross-Sensor Federation",
+      "population": "Multi-sensor satellite datasets (optical, SAR, multispectral, hyperspectral) held by different organizations",
+      "intervention": "Federated learning approaches handling sensor heterogeneity (vertical FL, multi-modal federation)",
+      "comparison": "Single-sensor federated learning, sensor-specific independent models",
+      "outcome": "Multi-sensor fusion accuracy, handling of missing modalities, transfer across sensor types",
+      "research_question": "How do federated learning approaches perform when federating across heterogeneous satellite sensor types compared to single-sensor federation?"
+    }
+  ],
+  "output": {
+    "filename": "pico-federated-learning-eo"
+  },
+  "metadata": {
+    "keywords": [
+      "federated learning",
+      "satellite imagery",
+      "Earth observation",
+      "distributed machine learning",
+      "privacy-preserving AI",
+      "land cover classification",
+      "remote sensing",
+      "deep learning",
+      "cross-organizational collaboration",
+      "data governance"
+    ],
+    "target_domains": [
+      "Earth Observation",
+      "Satellite Image Analysis",
+      "Land Cover Mapping",
+      "Disaster Response",
+      "Environmental Monitoring"
+    ],
+    "stakeholders": [
+      "Space agencies (ESA, NASA, JAXA, CNES)",
+      "Commercial satellite operators (Planet, Maxar, Airbus Defence and Space)",
+      "National mapping agencies",
+      "Climate research institutions",
+      "Defense and intelligence organizations",
+      "International development organizations",
+      "EO AI startups and service providers"
+    ],
+    "related_work": [
+      {
+        "citation": "Zhang et al. 2022",
+        "title": "Federated Learning for Remote Sensing Image Classification",
+        "journal": "IEEE Transactions on Geoscience and Remote Sensing"
+      },
+      {
+        "citation": "McMahan et al. 2017",
+        "title": "Communication-Efficient Learning of Deep Networks from Decentralized Data",
+        "venue": "AISTATS",
+        "note": "Foundational FedAvg paper"
+      },
+      {
+        "citation": "ESA Φ-lab",
+        "title": "AI4EO initiatives exploring federated approaches",
+        "url": "https://philab.esa.int/"
+      },
+      {
+        "citation": "Rieke et al. 2020",
+        "title": "The future of digital health with federated learning",
+        "journal": "npj Digital Medicine",
+        "note": "Foundational federated learning review applicable to sensitive data domains"
+      }
+    ],
+    "regulatory_context": [
+      {
+        "regulation": "EU Space Programme data policy",
+        "relevance": "Governs Copernicus data sharing and derived products"
+      },
+      {
+        "regulation": "US Commercial Remote Sensing Regulatory Affairs",
+        "relevance": "Licensing requirements for commercial satellite imagery"
+      },
+      {
+        "regulation": "GDPR",
+        "relevance": "Applies when high-resolution imagery contains identifiable individuals or properties"
+      }
+    ],
+    "science_live_connection": {
+      "demonstration_purpose": "Show how Science Live can help EO organizations identify validated federated learning approaches ready for operational deployment",
+      "templates_to_develop": [
+        "Federated learning benchmark results template",
+        "Privacy attack resistance evaluation template",
+        "Cross-sensor compatibility assessment template"
+      ],
+      "radar_categories": [
+        "FedAvg and variants for EO",
+        "Privacy-enhanced federation",
+        "Multi-modal/multi-sensor federation",
+        "Communication-efficient approaches"
+      ]
+    }
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "author": {
+    "orcid": "0000-0002-1784-2920",
+    "name": "Anne Fouilloux"
+  },
+  "pico": {
+    "title": "Data Governance for Satellite-Based Forest Monitoring in Indigenous Territories: A Scoping Review",
+    "population": "Satellite-based forest monitoring data covering indigenous territories, including deforestation alerts, fire detection, land use change classification, illegal mining and logging detection, and infrastructure encroachment monitoring in areas inhabited by indigenous peoples, including uncontacted or voluntarily isolated groups",
+    "intervention": "Data governance approaches integrating indigenous data sovereignty principles with satellite monitoring, including consent-based access controls, spatial masking of culturally sensitive areas, indigenous-controlled data repositories, tiered alert systems with indigenous community notification priority, CARE principles implementation (Collective benefit, Authority to control, Responsibility, Ethics), and co-designed monitoring protocols",
+    "comparison": "Open publication of all monitoring alerts (e.g., Global Forest Watch model), government-controlled access without indigenous consultation, complete restriction of indigenous territory data from external access, and external researcher-controlled access",
+    "outcome": "Effectiveness of forest protection and illegal activity deterrence, respect for indigenous data sovereignty and CARE principles, usability for indigenous-led territorial monitoring and governance, prevention of unauthorized access to locations of uncontacted peoples and sacred sites, community satisfaction and trust, and sustainability of monitoring partnerships",
+    "research_question": "For satellite-based forest monitoring in indigenous territories, how do different data governance approaches balance effective deforestation and illegal activity detection with indigenous data sovereignty and protection of culturally sensitive locations?",
+    "question_type": "effectiveness",
+    "rationale": "Indigenous territories contain approximately 80% of remaining biodiversity and are critical for climate mitigation. Satellite-based monitoring provides unprecedented capability for detecting deforestation and illegal activities threatening these lands. However, the same technology that enables protection can expose sensitive information: locations of uncontacted peoples, sacred sites, traditional resource areas, and patterns of indigenous land use. Indigenous communities have increasingly demanded data sovereignty over information about their territories. The tension between transparency for accountability and protection of indigenous interests requires governance approaches that have not been systematically evaluated. CARE principles (Collective benefit, Authority to control, Responsibility, Ethics) offer an emerging framework, but implementation evidence remains limited."
+  },
+  "sub_questions": [
+    {
+      "id": "SQ1",
+      "title": "Alert System Design for Indigenous Territories",
+      "population": "Deforestation and fire alert systems covering indigenous lands (Global Forest Watch, FIRMS, national systems)",
+      "intervention": "Indigenous-first notification systems, tiered access with delays for external users, community-controlled alert filtering",
+      "comparison": "Open immediate publication vs. indigenous-first notification vs. complete masking of indigenous areas",
+      "outcome": "Response time to deforestation events, protection outcomes (hectares prevented), indigenous community control and satisfaction, external researcher/NGO access sufficiency",
+      "research_question": "How do different alert notification and access models affect both protection outcomes and indigenous data sovereignty in forest monitoring systems?"
+    },
+    {
+      "id": "SQ2",
+      "title": "Spatial Masking of Sensitive Sites",
+      "population": "Satellite monitoring products covering areas with sacred sites, uncontacted peoples, or culturally sensitive locations",
+      "intervention": "Spatial masking approaches (buffer zones, generalization, complete omission, access-controlled high-resolution with masked public version)",
+      "comparison": "Different mask sizes, adaptive vs. fixed masking, indigenous-defined vs. externally-defined sensitive areas",
+      "outcome": "Protection of sensitive locations from external discovery, impact on monitoring utility, indigenous control over masking decisions, potential for mask boundaries themselves to reveal information",
+      "research_question": "What spatial masking approaches effectively protect sensitive indigenous sites while maintaining sufficient monitoring utility, and how should masking decisions be governed?"
+    },
+    {
+      "id": "SQ3",
+      "title": "Indigenous-Led Monitoring Platforms",
+      "population": "Community-based forest monitoring initiatives using satellite data (e.g., Rainforest Foundation, indigenous territorial monitoring)",
+      "intervention": "Indigenous-controlled satellite data platforms with community-defined access rules and benefit-sharing",
+      "comparison": "External NGO/researcher-controlled platforms providing data to communities vs. indigenous-controlled platforms",
+      "outcome": "Indigenous technical capacity development, sustainability of monitoring programs, data quality and coverage, community ownership and continued participation, CARE principles compliance",
+      "research_question": "How do indigenous-controlled satellite monitoring platforms compare to externally-managed platforms in achieving sustained forest protection while respecting data sovereignty?"
+    }
+  ],
+  "output": {
+    "filename": "pico-indigenous-forest-privacy"
+  },
+  "metadata": {
+    "keywords": [
+      "indigenous data sovereignty",
+      "forest monitoring",
+      "deforestation alerts",
+      "CARE principles",
+      "FAIR principles",
+      "uncontacted peoples",
+      "sacred sites",
+      "territorial monitoring",
+      "Global Forest Watch",
+      "community-based monitoring",
+      "data governance",
+      "indigenous rights"
+    ],
+    "target_domains": [
+      "Earth Observation",
+      "Forest Conservation",
+      "Indigenous Rights",
+      "Biodiversity Conservation",
+      "Climate Change Mitigation",
+      "Land Governance"
+    ],
+    "stakeholders": [
+      "Indigenous peoples organizations and federations",
+      "National indigenous affairs agencies (FUNAI, etc.)",
+      "Forest monitoring platforms (Global Forest Watch, MAAP)",
+      "Conservation NGOs working with indigenous communities",
+      "International indigenous rights organizations",
+      "UN agencies (UN-REDD, OHCHR)",
+      "National environmental agencies",
+      "Academic researchers in indigenous territories",
+      "Funding organizations (GEF, bilateral donors)"
+    ],
+    "related_work": [
+      {
+        "citation": "GIDA 2019",
+        "title": "CARE Principles for Indigenous Data Governance",
+        "url": "https://www.gida-global.org/care",
+        "note": "Foundational framework for indigenous data sovereignty"
+      },
+      {
+        "citation": "Global Forest Watch",
+        "title": "Global Forest Watch",
+        "url": "https://www.globalforestwatch.org/",
+        "note": "Major platform publishing deforestation alerts including over indigenous territories"
+      },
+      {
+        "citation": "Walker et al. 2020",
+        "title": "The role of forest conversion, degradation, and disturbance in the carbon dynamics of Amazon indigenous territories and protected areas",
+        "journal": "PNAS"
+      },
+      {
+        "citation": "Garnett et al. 2018",
+        "title": "A spatial overview of the global importance of Indigenous lands for conservation",
+        "journal": "Nature Sustainability"
+      },
+      {
+        "citation": "Survival International",
+        "title": "Concerns about mapping uncontacted peoples",
+        "note": "Advocacy position on risks of location exposure"
+      },
+      {
+        "citation": "Rainforest Foundation US",
+        "title": "Community-Based Monitoring Programs",
+        "note": "Practitioner experience with indigenous forest monitoring"
+      }
+    ],
+    "regulatory_context": [
+      {
+        "regulation": "UN Declaration on the Rights of Indigenous Peoples (UNDRIP)",
+        "relevance": "Article 31 affirms right to maintain, control, protect and develop cultural heritage, traditional knowledge, and genetic resources"
+      },
+      {
+        "regulation": "ILO Convention 169",
+        "relevance": "Requires consultation and participation of indigenous peoples in decisions affecting them"
+      },
+      {
+        "regulation": "CBD Traditional Knowledge provisions",
+        "relevance": "Protection of traditional knowledge including spatial knowledge"
+      },
+      {
+        "regulation": "National indigenous territorial rights legislation",
+        "relevance": "Varies by country; affects data governance requirements"
+      },
+      {
+        "regulation": "Brazil Ordinance 419 (uncontacted peoples)",
+        "relevance": "Specific protections for information about isolated indigenous peoples"
+      }
+    ],
+    "ethical_considerations": [
+      {
+        "consideration": "Risk to uncontacted peoples",
+        "description": "Location exposure can enable contact with potentially lethal consequences"
+      },
+      {
+        "consideration": "Sacred site protection",
+        "description": "Some sites are considered spiritually powerful and their locations are restricted knowledge"
+      },
+      {
+        "consideration": "Free, Prior and Informed Consent (FPIC)",
+        "description": "Fundamental requirement for any data collection or sharing affecting indigenous peoples"
+      },
+      {
+        "consideration": "Benefit sharing",
+        "description": "How benefits from monitoring data should flow to indigenous communities"
+      }
+    ],
+    "science_live_connection": {
+      "demonstration_purpose": "Help conservation organizations and monitoring platforms develop evidence-based indigenous data governance approaches",
+      "templates_to_develop": [
+        "Indigenous data governance assessment template",
+        "CARE principles implementation documentation",
+        "Community consent and benefit-sharing documentation"
+      ],
+      "radar_categories": [
+        "Alert system governance models",
+        "Spatial masking approaches",
+        "Indigenous-controlled platforms",
+        "Consent and participation frameworks"
+      ]
+    }
+  }
+}

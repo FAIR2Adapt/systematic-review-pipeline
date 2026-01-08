@@ -1,0 +1,132 @@
+{
+  "author": {
+    "orcid": "0000-0002-1784-2920",
+    "name": "Anne Fouilloux"
+  },
+  "pico": {
+    "title": "Differential Privacy for Satellite-Derived Climate Data Products: A Scoping Review",
+    "population": "Gridded climate and environmental data products derived from satellite observations at fine spatial and temporal resolution, including land surface temperature, precipitation estimates, vegetation indices (NDVI, EVI), soil moisture, snow cover, atmospheric composition, and derived climate indicators used in research, agriculture, water management, and infrastructure planning",
+    "intervention": "Differential privacy mechanisms applied to climate data products before public release, including spatial noise addition (Laplace, Gaussian), temporal perturbation, resolution coarsening with privacy guarantees, and synthetic climate data generation with formal privacy bounds",
+    "comparison": "Different epsilon (ε) values ranging from 0.1 (strong privacy) to 10 (weak privacy); spatial vs. temporal vs. combined noise addition strategies; different noise mechanisms; unprotected release baseline; traditional resolution-limited release without formal guarantees",
+    "outcome": "Scientific utility for climate applications (trend detection accuracy, anomaly identification, extreme event detection), formal privacy guarantee strength, downstream model performance (crop yield models, hydrological simulations, energy demand forecasting), spatial and temporal correlation preservation, and practical feasibility for operational climate services",
+    "research_question": "For satellite-derived climate data products at fine spatial resolution, how do differential privacy mechanisms at various epsilon levels affect the scientific utility for detecting climate trends, anomalies, and extreme events while providing formal privacy guarantees?",
+    "question_type": "effectiveness",
+    "rationale": "High-resolution satellite-derived climate data can reveal sensitive information including military installation activity patterns (thermal signatures), industrial operations (emissions, heat), agricultural practices, and infrastructure vulnerabilities. Some data providers require formal privacy guarantees before sharing fine-resolution products. Additionally, as climate data increasingly underpins commercial decisions (energy trading, insurance, agriculture), privacy becomes relevant to protect proprietary ground-truth data contributing to satellite product calibration. Understanding privacy-utility trade-offs enables evidence-based decisions about climate data distribution policies."
+  },
+  "sub_questions": [
+    {
+      "id": "SQ1",
+      "title": "Impact on Climate Trend Detection",
+      "population": "Multi-decadal satellite-derived temperature and vegetation index time series",
+      "intervention": "Differential privacy with epsilon values from 0.5 to 5.0 applied to annual/seasonal aggregates",
+      "comparison": "Original data trend analysis vs. differentially private versions",
+      "outcome": "Trend magnitude estimation bias, statistical significance preservation, trend detection power, Type I and Type II error rates",
+      "research_question": "How does differential privacy affect the ability to detect and quantify long-term climate trends in satellite-derived data products?"
+    },
+    {
+      "id": "SQ2",
+      "title": "Extreme Event Detection Preservation",
+      "population": "High-resolution satellite products used for detecting climate extremes (heatwaves, droughts, floods)",
+      "intervention": "Differential privacy mechanisms with various noise distributions",
+      "comparison": "Laplace vs. Gaussian noise; truncated vs. unbounded noise; different epsilon values",
+      "outcome": "Extreme event detection sensitivity and specificity, false alarm rate, event magnitude estimation accuracy, spatial extent estimation",
+      "research_question": "Which differential privacy mechanisms best preserve the ability to detect climate extremes while providing formal privacy guarantees?"
+    },
+    {
+      "id": "SQ3",
+      "title": "Downstream Model Performance",
+      "population": "Climate-dependent models using satellite-derived inputs (crop models, hydrological models, energy demand models)",
+      "intervention": "Differentially private climate inputs at various epsilon levels",
+      "comparison": "Model performance with original vs. private inputs; different model types and sensitivities",
+      "outcome": "Model output accuracy degradation, uncertainty propagation, decision-relevance threshold identification",
+      "research_question": "How does differential privacy in satellite-derived climate inputs propagate through downstream models, and what epsilon values maintain decision-relevant accuracy?"
+    }
+  ],
+  "output": {
+    "filename": "pico-climate-differential-privacy"
+  },
+  "metadata": {
+    "keywords": [
+      "differential privacy",
+      "climate data",
+      "satellite observations",
+      "land surface temperature",
+      "vegetation indices",
+      "climate trends",
+      "extreme events",
+      "climate services",
+      "environmental monitoring",
+      "Copernicus Climate Change Service"
+    ],
+    "target_domains": [
+      "Earth Observation",
+      "Climate Science",
+      "Climate Services",
+      "Agricultural Meteorology",
+      "Water Resource Management",
+      "Energy Sector"
+    ],
+    "stakeholders": [
+      "Climate data providers (C3S, NOAA, NASA)",
+      "National meteorological services",
+      "Climate research institutions",
+      "Energy companies and grid operators",
+      "Agricultural service providers",
+      "Water management authorities",
+      "Insurance and reinsurance companies",
+      "Climate-sensitive infrastructure operators"
+    ],
+    "related_work": [
+      {
+        "citation": "Copernicus Climate Change Service (C3S)",
+        "title": "Climate Data Store",
+        "url": "https://cds.climate.copernicus.eu/",
+        "note": "Major public climate data distribution platform"
+      },
+      {
+        "citation": "Dwork & Roth 2014",
+        "title": "The Algorithmic Foundations of Differential Privacy",
+        "journal": "Foundations and Trends in Theoretical Computer Science",
+        "note": "Foundational differential privacy reference"
+      },
+      {
+        "citation": "Fan & Xiong 2014",
+        "title": "An Adaptive Approach to Real-Time Aggregate Monitoring With Differential Privacy",
+        "journal": "IEEE Transactions on Knowledge and Data Engineering"
+      },
+      {
+        "citation": "Monteleoni et al. 2011",
+        "title": "Climate Informatics",
+        "venue": "Computational Intelligent Data Analysis for Sustainable Development"
+      }
+    ],
+    "regulatory_context": [
+      {
+        "regulation": "EU Open Data Directive",
+        "relevance": "Mandates open access to environmental data but may allow privacy exceptions"
+      },
+      {
+        "regulation": "WMO Resolution 40",
+        "relevance": "Policy on exchange of meteorological data - balances open exchange with national interests"
+      },
+      {
+        "regulation": "National security classifications",
+        "relevance": "High-resolution thermal and activity data may reveal sensitive facility operations"
+      }
+    ],
+    "science_live_connection": {
+      "demonstration_purpose": "Help climate service providers determine appropriate privacy-utility trade-offs for data distribution",
+      "templates_to_develop": [
+        "Privacy-utility curve documentation template",
+        "Downstream impact assessment template",
+        "Epsilon selection guidance template"
+      ],
+      "radar_categories": [
+        "Spatial differential privacy mechanisms",
+        "Temporal differential privacy approaches",
+        "Privacy-preserving climate statistics",
+        "Synthetic climate data generation"
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "_description": "Database search URIs for use in Search Execution Dataset notebook",
+  "_created": "2025-12-29T17:52:26.296071+00:00",
+  "_test_server": false,
+  "database_searches": [
+    {
+      "database": "OpenAlex",
+      "label": "OpenAlex Search",
+      "nanopub_uri": "https://w3id.org/np/RAkV7KfvYqIpFLfMqqLmZxyCpr4VFcgE4ln3FRYrZwdaE",
+      "search_uri": "https://w3id.org/np/RAkV7KfvYqIpFLfMqqLmZxyCpr4VFcgE4ln3FRYrZwdaE/search"
+    },
+    {
+      "database": "arXiv",
+      "label": "arXiv Search",
+      "nanopub_uri": "https://w3id.org/np/RApg5W58ZcDLDtKF2txz-SrOVsjM-3lpoPkrWGOFcigZU",
+      "search_uri": "https://w3id.org/np/RApg5W58ZcDLDtKF2txz-SrOVsjM-3lpoPkrWGOFcigZU/search"
+    },
+    {
+      "database": "Semantic Scholar",
+      "label": "Semantic Scholar Search",
+      "nanopub_uri": "https://w3id.org/np/RARwCFSuFUqEE0OPW8CeynB8cx4zemGB09obBA9eXfo78",
+      "search_uri": "https://w3id.org/np/RARwCFSuFUqEE0OPW8CeynB8cx4zemGB09obBA9eXfo78/search"
+    },
+    {
+      "database": "PubMed",
+      "label": "PubMed Search",
+      "nanopub_uri": "https://w3id.org/np/RAkZsd1zUQn8lXlN8yNQgZBO2W4iuZhMQDE0r-kBXrF6g",
+      "search_uri": "https://w3id.org/np/RAkZsd1zUQn8lXlN8yNQgZBO2W4iuZhMQDE0r-kBXrF6g/search"
+    },
+    {
+      "database": "IEEE Xplore (OA only)",
+      "label": "IEEE Xplore (OA only) Search",
+      "nanopub_uri": "https://w3id.org/np/RAVBmg81fxSEFhZ5W9D89XxBR2Scts7yWSWFtFY4OX5UI",
+      "search_uri": "https://w3id.org/np/RAVBmg81fxSEFhZ5W9D89XxBR2Scts7yWSWFtFY4OX5UI/search"
+    },
+    {
+      "database": "Europe PMC",
+      "label": "Europe PMC Search",
+      "nanopub_uri": "https://w3id.org/np/RASfip5KQntGv4ACoKui2ZBwhSQKTQPPClPC1zyQHo29M",
+      "search_uri": "https://w3id.org/np/RASfip5KQntGv4ACoKui2ZBwhSQKTQPPClPC1zyQHo29M/search"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "author": {
+    "orcid": "0000-0002-1784-2920",
+    "name": "Anne Fouilloux"
+  },
+  "search_strategy": {
+    "label": "Machine Learning for Wildfire Detection using Sentinel-2 - Literature Search",
+    "part_of": "https://w3id.org/spaces/sciencelive/wildfire-sentinel2-ml-review",
+    "databases": [
+      "https://arxiv.org/",
+      "https://www.semanticscholar.org/",
+      "https://openalex.org/"
+    ],
+    "search_terms": [
+      {"uri": "https://www.wikidata.org/wiki/Q169950", "label": "wildfire"},
+      {"uri": "https://www.wikidata.org/wiki/Q107434304", "label": "forest fire"},
+      {"uri": "https://www.wikidata.org/wiki/Q33374019", "label": "burned area"},
+      {"uri": "https://www.wikidata.org/wiki/Q4302480", "label": "Sentinel-2"},
+      {"uri": "https://www.wikidata.org/wiki/Q131985539", "label": "Sentinel-2 data"},
+      {"uri": "http://purl.obolibrary.org/obo/ENVO_01000174", "label": "forest biome"},
+      {"uri": "https://www.wikidata.org/wiki/Q2539", "label": "machine learning"},
+      {"uri": "https://www.wikidata.org/wiki/Q197536", "label": "deep learning"},
+      {"uri": "https://www.wikidata.org/wiki/Q192776", "label": "artificial neural network"},
+      {"uri": "https://www.wikidata.org/wiki/Q245748", "label": "random forest"},
+      {"uri": "https://www.wikidata.org/wiki/Q7397", "label": "software"},
+      {"uri": "https://www.wikidata.org/wiki/Q11660", "label": "artificial intelligence"}
+    ],
+    "search_groups": {
+      "satellite": ["Sentinel-2", "Sentinel-2 data"],
+      "application": ["wildfire", "forest fire", "burned area"],
+      "method": ["machine learning", "deep learning", "artificial neural network", "random forest"]
+    },
+    "time_period": {
+      "start": "2015-06-23",
+      "end": "2025-12-31"
+    },
+    "languages": [
+      "http://id.loc.gov/vocabulary/iso639-1/en"
+    ],
+    "methodology_notes": "Search strategy for systematic review on machine learning algorithms applied to Sentinel-2 imagery for wildfire applications. Boolean operators: (Sentinel-2 OR Sentinel-2 data) AND (wildfire OR forest fire OR burned area) AND (machine learning OR deep learning OR artificial neural network OR random forest). Date restriction: June 2015-present (Sentinel-2A launch: 23 June 2015). Language: English only. Database selection: OpenAlex (comprehensive coverage, free API), arXiv (preprints in cs.CV, cs.LG, eess.IV), Semantic Scholar (AI-enhanced discovery, free API). Exclusions: conference abstracts without full methodology, reviews without original experiments, studies using only MODIS/Landsat without Sentinel-2. Citation tracking: backward/forward citation analysis of included papers using Semantic Scholar and OpenAlex APIs."
+  },
+  "output": {
+    "filename": "wildfire-sentinel2-ml-search-strategy"
+  }
+}

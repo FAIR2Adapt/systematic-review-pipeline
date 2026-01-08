@@ -1,0 +1,143 @@
+{
+  "author": {
+    "orcid": "0000-0002-1784-2920",
+    "name": "Anne Fouilloux"
+  },
+  "pico": {
+    "title": "Privacy-Preserving Computation for Cross-Border Earth Observation Data Sharing: A Scoping Review",
+    "population": "Satellite-derived environmental monitoring data requiring cross-border sharing for regional and global analysis, including transboundary deforestation monitoring, shared watershed water quality assessment, cross-border air pollution tracking, migratory species monitoring, regional climate analysis, and disaster response coordination across national boundaries",
+    "intervention": "Privacy-preserving computation approaches enabling joint analysis without raw data transfer, including secure multi-party computation (MPC/SMPC), trusted execution environments (TEEs/secure enclaves), homomorphic encryption (FHE, PHE), federated analytics, and differential privacy for cross-border aggregates",
+    "comparison": "Traditional data sharing via bilateral agreements and data transfer, federated analysis without cryptographic protection, analysis restricted to national boundaries only, and trusted third-party data intermediaries",
+    "outcome": "Analytical capability for transboundary environmental assessments (accuracy, completeness, timeliness), compliance with data sovereignty requirements and national legislation, computational feasibility (latency, cost, scalability), trust establishment and governance complexity, and operational sustainability",
+    "research_question": "For transboundary environmental monitoring requiring satellite data from multiple jurisdictions, how do cryptographic privacy-preserving computation approaches compare to traditional data sharing mechanisms in enabling regional analysis while respecting data sovereignty requirements?",
+    "question_type": "effectiveness",
+    "rationale": "Environmental challenges do not respect national borders: the Amazon spans 9 countries, major river basins cross multiple jurisdictions, air pollution flows across frontiers, and migratory species traverse continents. Effective monitoring requires combining satellite observations from multiple national sources. However, data sovereignty laws increasingly restrict cross-border data flows, and national agencies may be unwilling to share raw observations for security, commercial, or political reasons. Privacy-preserving computation offers a potential technical solution enabling joint analysis without data transfer, but evidence on practical effectiveness for EO applications remains limited."
+  },
+  "sub_questions": [
+    {
+      "id": "SQ1",
+      "title": "Secure Multi-Party Computation for EO Analytics",
+      "population": "Multi-country satellite data analysis scenarios (shared watersheds, transboundary forests, regional air quality)",
+      "intervention": "Secure multi-party computation protocols for satellite image statistics and derived products",
+      "comparison": "Different MPC frameworks (SPDZ, ABY, MP-SPDZ); MPC vs. centralized trusted third party",
+      "outcome": "Computational overhead, communication costs, accuracy vs. centralized computation, practical latency for time-sensitive applications",
+      "research_question": "How practical is secure multi-party computation for cross-border satellite data analysis in terms of computational overhead and latency?"
+    },
+    {
+      "id": "SQ2",
+      "title": "Trusted Execution Environments for Satellite Data",
+      "population": "Satellite imagery requiring processing in a neutral trusted environment",
+      "intervention": "TEE-based processing (Intel SGX, ARM TrustZone, AMD SEV) for satellite data analytics",
+      "comparison": "TEE vs. MPC vs. traditional trusted third party; different TEE platforms",
+      "outcome": "Processing performance, trust model requirements, attestation and verification complexity, vulnerability to side-channel attacks",
+      "research_question": "Can trusted execution environments provide practical privacy guarantees for cross-border satellite data processing, and what are the trust assumptions and limitations?"
+    },
+    {
+      "id": "SQ3",
+      "title": "Governance and Trust Frameworks",
+      "population": "International environmental monitoring initiatives requiring multi-country satellite data (GEO, CEOS, regional agreements)",
+      "intervention": "Technical-legal governance frameworks combining privacy-preserving computation with international agreements",
+      "comparison": "Pure technical solutions vs. pure legal frameworks vs. combined technical-legal approaches",
+      "outcome": "Participation rates, time to operational deployment, dispute resolution effectiveness, long-term sustainability",
+      "research_question": "What governance frameworks most effectively combine privacy-preserving computation technologies with international agreements to enable sustained cross-border environmental monitoring?"
+    }
+  ],
+  "output": {
+    "filename": "pico-crossborder-eo-privacy"
+  },
+  "metadata": {
+    "keywords": [
+      "data sovereignty",
+      "cross-border data sharing",
+      "secure multi-party computation",
+      "trusted execution environments",
+      "transboundary monitoring",
+      "environmental governance",
+      "satellite data sharing",
+      "international cooperation",
+      "privacy-preserving computation",
+      "GEO",
+      "CEOS"
+    ],
+    "target_domains": [
+      "Earth Observation",
+      "International Environmental Governance",
+      "Transboundary Water Management",
+      "Forest Monitoring",
+      "Air Quality Monitoring",
+      "Climate Cooperation"
+    ],
+    "stakeholders": [
+      "National space agencies",
+      "National environmental ministries",
+      "International organizations (UNEP, FAO, WMO)",
+      "Group on Earth Observations (GEO)",
+      "Committee on Earth Observation Satellites (CEOS)",
+      "Regional environmental bodies (EU Environment Agency, ASEAN)",
+      "River basin organizations",
+      "International research programs"
+    ],
+    "related_work": [
+      {
+        "citation": "GEO Data Sharing Principles",
+        "title": "GEOSS Data Sharing Principles",
+        "url": "https://www.earthobservations.org/geoss_dsp.shtml",
+        "note": "International framework for EO data sharing"
+      },
+      {
+        "citation": "Archer et al. 2018",
+        "title": "From Cloud to Fog and Beyond: The Future of Computing for the Internet of Things",
+        "note": "Includes discussion of privacy-preserving edge computation"
+      },
+      {
+        "citation": "EU Data Governance Act 2022",
+        "title": "Regulation on European data governance",
+        "note": "Establishes framework for data intermediaries and international data transfers"
+      },
+      {
+        "citation": "Global Forest Watch",
+        "title": "Global Forest Watch",
+        "url": "https://www.globalforestwatch.org/",
+        "note": "Example of global forest monitoring requiring multi-source data"
+      },
+      {
+        "citation": "Amazon cooperation",
+        "title": "Amazon Cooperation Treaty Organization (ACTO)",
+        "note": "Regional framework for Amazon monitoring across 8 countries"
+      }
+    ],
+    "regulatory_context": [
+      {
+        "regulation": "GDPR data transfer restrictions",
+        "relevance": "Affects EU-third country environmental data exchanges when personal data involved"
+      },
+      {
+        "regulation": "China Data Security Law",
+        "relevance": "Restricts cross-border transfer of important data including some geographic information"
+      },
+      {
+        "regulation": "Russia Federal Law on Geodesy and Cartography",
+        "relevance": "Restrictions on geographic data sharing outside Russia"
+      },
+      {
+        "regulation": "Brazil LGPD",
+        "relevance": "Data protection requirements affecting Amazon monitoring cooperation"
+      }
+    ],
+    "science_live_connection": {
+      "demonstration_purpose": "Help international organizations and space agencies identify feasible privacy-preserving approaches for cross-border environmental monitoring",
+      "templates_to_develop": [
+        "Cross-border feasibility assessment template",
+        "Trust model documentation template",
+        "Governance framework comparison template"
+      ],
+      "radar_categories": [
+        "Secure multi-party computation for EO",
+        "Trusted execution environments",
+        "Homomorphic encryption applications",
+        "Federated analytics frameworks",
+        "Technical-legal governance models"
+      ]
+    }
+  }
+}

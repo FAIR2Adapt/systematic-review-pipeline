@@ -1,0 +1,140 @@
+{
+  "author": {
+    "orcid": "0000-0002-1784-2920",
+    "name": "Anne Fouilloux"
+  },
+  "pico": {
+    "title": "Privacy-Preserving Agricultural Monitoring from Satellite Observations: A Scoping Review",
+    "population": "Field-level agricultural observations derived from satellite imagery including crop type classification, yield estimates, irrigation practices, fertilizer and pesticide application timing, tillage detection, and livestock density estimates from optical, SAR, and thermal sensors",
+    "intervention": "Privacy-preserving methods for producing regional and national agricultural statistics from farm-level satellite observations, including spatial aggregation schemes, differential privacy mechanisms, k-anonymity adaptations, secure multi-party computation for cross-organization analysis, and synthetic data generation",
+    "comparison": "Different aggregation units (field, farm, commune, district, region), various differential privacy epsilon values, different k-anonymity thresholds, unprotected field-level data sharing, and traditional survey-based agricultural statistics",
+    "outcome": "Statistical accuracy of agricultural indicators (crop area estimates, yield predictions, input use statistics), individual farm re-identification risk, compliance with agricultural data protection regulations (EU CAP, US Farm Bill privacy provisions), utility for agricultural policy decisions and market analysis, and computational/administrative feasibility",
+    "research_question": "For field-level agricultural observations derived from satellite imagery, how do different privacy-preserving aggregation and anonymization methods compare in producing accurate regional and national statistics while protecting individual farm-level information from re-identification?",
+    "question_type": "effectiveness",
+    "rationale": "Precision agriculture and satellite-based crop monitoring generate unprecedented detail at the individual field level. While aggregate statistics are essential for food security policy, agricultural subsidies administration, commodity markets, and insurance pricing, individual farmers have legitimate privacy and commercial interests in their field-level management practices. The EU Common Agricultural Policy increasingly uses satellite monitoring for compliance verification, raising tensions between transparency and farmer privacy. This review synthesizes evidence on privacy-utility trade-offs to guide agricultural data governance frameworks."
+  },
+  "sub_questions": [
+    {
+      "id": "SQ1",
+      "title": "Spatial Aggregation Unit Selection",
+      "population": "Field-level crop type and yield data from satellite imagery",
+      "intervention": "Aggregation at different spatial units (1ha, 10ha, 100ha, administrative boundaries)",
+      "comparison": "Different aggregation unit sizes compared; fixed grid vs. adaptive aggregation",
+      "outcome": "Crop area estimation accuracy, yield prediction reliability, re-identification risk for individual farms, minimum viable aggregation unit for privacy",
+      "research_question": "What is the minimum spatial aggregation unit that provides meaningful privacy protection for farm-level satellite observations while maintaining useful agricultural statistics?"
+    },
+    {
+      "id": "SQ2",
+      "title": "Differential Privacy for Crop Statistics",
+      "population": "Aggregated crop statistics (area, yield, input use) derived from satellite monitoring",
+      "intervention": "Differential privacy with various epsilon values (0.1 to 10) and composition strategies",
+      "comparison": "True statistics without noise; different noise mechanisms (Laplace, Gaussian)",
+      "outcome": "Absolute and relative error in crop area and yield estimates, privacy guarantee strength, utility for different downstream applications (policy, markets, research)",
+      "research_question": "What epsilon values provide acceptable accuracy for agricultural statistics while offering meaningful privacy protection for contributing farms?"
+    },
+    {
+      "id": "SQ3",
+      "title": "Re-identification Risk in Agricultural Satellite Data",
+      "population": "Anonymized or aggregated agricultural datasets derived from satellite imagery",
+      "intervention": "Re-identification attack methods using auxiliary information (cadastral data, subsidy records, public imagery)",
+      "comparison": "Different anonymization techniques; different levels of auxiliary information availability",
+      "outcome": "Re-identification success rate, fields at highest risk, effectiveness of different protection methods",
+      "research_question": "How vulnerable are anonymized satellite-derived agricultural statistics to re-identification attacks using publicly available auxiliary data?"
+    }
+  ],
+  "output": {
+    "filename": "pico-agriculture-privacy-eo"
+  },
+  "metadata": {
+    "keywords": [
+      "precision agriculture",
+      "agricultural statistics",
+      "satellite crop monitoring",
+      "farm data privacy",
+      "differential privacy",
+      "spatial aggregation",
+      "crop yield estimation",
+      "food security",
+      "CAP monitoring",
+      "agricultural data governance"
+    ],
+    "target_domains": [
+      "Earth Observation",
+      "Precision Agriculture",
+      "Agricultural Policy",
+      "Food Security Monitoring",
+      "Crop Insurance"
+    ],
+    "stakeholders": [
+      "Agricultural ministries and statistics agencies",
+      "EU CAP Paying Agencies",
+      "USDA and national agricultural statistics services",
+      "Agtech companies and farm management platforms",
+      "Crop insurance providers",
+      "Commodity traders and market analysts",
+      "Farm bureaus and agricultural cooperatives",
+      "Individual farmers",
+      "Agricultural researchers"
+    ],
+    "related_work": [
+      {
+        "citation": "EU JRC MARS",
+        "title": "Monitoring Agricultural Resources System",
+        "url": "https://mars.jrc.ec.europa.eu/",
+        "note": "EU crop monitoring using satellite data"
+      },
+      {
+        "citation": "Bégué et al. 2018",
+        "title": "Remote Sensing and Cropping Practices: A Review",
+        "journal": "Remote Sensing"
+      },
+      {
+        "citation": "Weersink et al. 2018",
+        "title": "Opportunities and Challenges for Big Data in Agricultural and Environmental Analysis",
+        "journal": "Annual Review of Resource Economics"
+      },
+      {
+        "citation": "Wolfert et al. 2017",
+        "title": "Big Data in Smart Farming - A review",
+        "journal": "Agricultural Systems"
+      },
+      {
+        "citation": "EU Code of Conduct on Agricultural Data Sharing",
+        "title": "EU Code of conduct on agricultural data sharing by contractual agreement",
+        "year": "2018"
+      }
+    ],
+    "regulatory_context": [
+      {
+        "regulation": "EU Common Agricultural Policy (CAP)",
+        "relevance": "Satellite monitoring for subsidy compliance creates detailed farm-level records"
+      },
+      {
+        "regulation": "GDPR",
+        "relevance": "Farm data linked to farmer identity constitutes personal data"
+      },
+      {
+        "regulation": "US Agricultural Data Transparency and Security Act proposals",
+        "relevance": "Ongoing legislative discussions on farm data protection"
+      },
+      {
+        "regulation": "EU Data Governance Act",
+        "relevance": "Framework for agricultural data spaces and data altruism"
+      }
+    ],
+    "science_live_connection": {
+      "demonstration_purpose": "Demonstrate Science Live value for agtech companies and agricultural agencies selecting privacy-preserving approaches for satellite crop monitoring",
+      "templates_to_develop": [
+        "Aggregation utility assessment template",
+        "Re-identification risk evaluation template",
+        "Regulatory compliance mapping template"
+      ],
+      "radar_categories": [
+        "Spatial aggregation methods",
+        "Differential privacy for crop statistics",
+        "Synthetic agricultural data generation",
+        "Secure computation for cross-farm analysis"
+      ]
+    }
+  }
+}

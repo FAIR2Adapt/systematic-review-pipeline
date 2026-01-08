@@ -1,0 +1,151 @@
+{
+  "author": {
+    "orcid": "0000-0002-1784-2920",
+    "name": "Anne Fouilloux"
+  },
+  "pico": {
+    "title": "Privacy-Enhancing Technologies for Geospatial Biodiversity Data Sharing: A Scoping Review",
+    "population": "Geospatial species occurrence datasets shared by biodiversity monitoring organizations, including citizen science platforms, national biodiversity databases, GBIF-mediated data, and sensitive species location records used in conservation planning and ecological research",
+    "intervention": "Privacy-enhancing technologies including spatial generalization (grid-based aggregation, convex hulls), differential privacy mechanisms, controlled access systems (tiered permissions, data use agreements), spatial cloaking, k-anonymity adaptations for location data, and emerging approaches such as secure multi-party computation and zero-knowledge proofs for data governance",
+    "comparison": "Alternative PET approaches compared against each other, against unprotected data sharing baselines, and across different parameterizations (e.g., grid resolutions, epsilon values, access tier structures)",
+    "outcome": "Privacy protection effectiveness (re-identification risk, formal privacy guarantees), preservation of ecological analytical utility (species distribution model accuracy, biodiversity index reliability, spatial pattern retention), implementation feasibility (computational cost, regulatory compliance, organizational adoption barriers), and documented trade-offs between privacy and utility",
+    "research_question": "In geospatial species occurrence datasets, how do different privacy-enhancing technologies compare to each other and to unprotected sharing in terms of privacy guarantee strength, preservation of ecological analytical utility, and implementation feasibility for biodiversity monitoring organizations?",
+    "question_type": "effectiveness",
+    "rationale": "Biodiversity monitoring organizations face a critical dilemma: sharing species occurrence data enables research and conservation action, but exposing precise locations of endangered, commercially valuable, or culturally sensitive species creates risks including poaching, illegal collection, and habitat disturbance. GDPR and similar regulations add compliance requirements when human activity patterns are captured alongside biodiversity observations. Despite growing literature on privacy-preserving geospatial methods, no systematic synthesis exists to guide practitioners in selecting appropriate PETs for biodiversity contexts. This scoping review maps validated approaches, identifies evidence gaps, and characterizes trade-offs to support evidence-based technology selection."
+  },
+  "sub_questions": [
+    {
+      "id": "SQ1",
+      "title": "Spatial Generalization Effectiveness",
+      "population": "Species point occurrence records from citizen science platforms and national databases",
+      "intervention": "Spatial generalization methods (grid-based aggregation at various resolutions, adaptive grids, convex hull masking)",
+      "comparison": "Original point data versus generalized outputs at 1km, 10km, 50km resolutions; fixed versus adaptive grid approaches",
+      "outcome": "Species distribution model accuracy (AUC, TSS), location privacy (k-anonymity achievement, re-identification risk), spatial pattern preservation",
+      "research_question": "For citizen science species occurrence records, how does grid-based spatial generalization at different resolutions compare to original point data in preserving species distribution model accuracy while reducing re-identification risk?"
+    },
+    {
+      "id": "SQ2",
+      "title": "Differential Privacy for Biodiversity Statistics",
+      "population": "Aggregated biodiversity metrics derived from occurrence data (species richness, abundance indices, diversity measures)",
+      "intervention": "Differential privacy mechanisms (Laplace noise, Gaussian mechanism, exponential mechanism) applied to biodiversity statistics",
+      "comparison": "Different epsilon (ε) values ranging from 0.1 to 10; comparison to unprotected statistics baseline",
+      "outcome": "Statistical accuracy of biodiversity indices, formal privacy guarantee strength, utility-privacy trade-off curves",
+      "research_question": "For aggregated biodiversity metrics, how do differential privacy mechanisms with varying epsilon values compare to unprotected statistics in maintaining accuracy of diversity indices while providing formal privacy guarantees?"
+    },
+    {
+      "id": "SQ3",
+      "title": "Access Control versus Data Transformation",
+      "population": "Sensitive species location data (IUCN threatened species, commercially valuable species, culturally sensitive sites)",
+      "intervention": "Controlled access systems including tiered permission structures, data use agreements, embargo periods, and institutional vetting",
+      "comparison": "Data transformation approaches (generalization, perturbation, synthetic data generation)",
+      "outcome": "Research utility metrics, compliance burden (time, cost, administrative overhead), documented data misuse incidents, researcher satisfaction",
+      "research_question": "For sensitive species location data, how do controlled access systems compare to data transformation approaches in enabling research utility while minimizing compliance burden and data misuse risk?"
+    }
+  ],
+  "output": {
+    "filename": "pets-biodiversity-pico"
+  },
+  "metadata": {
+    "keywords": [
+      "privacy-enhancing technologies",
+      "biodiversity data",
+      "species occurrence",
+      "geospatial privacy",
+      "spatial generalization",
+      "differential privacy",
+      "data sharing",
+      "GBIF",
+      "citizen science",
+      "sensitive species",
+      "conservation data management",
+      "GDPR compliance",
+      "location privacy",
+      "ecological research"
+    ],
+    "target_domains": [
+      "Earth Observation",
+      "Biodiversity Monitoring",
+      "Conservation Planning",
+      "Citizen Science",
+      "Species Distribution Modeling"
+    ],
+    "stakeholders": [
+      "Biodiversity monitoring organizations",
+      "Conservation NGOs",
+      "National biodiversity data facilities",
+      "GBIF nodes and data publishers",
+      "Citizen science platforms",
+      "Environmental regulatory agencies",
+      "Ecological researchers"
+    ],
+    "related_work": [
+      {
+        "citation": "Chapman & Grafton 2008",
+        "title": "Guide to Best Practices for Generalising Sensitive Species Occurrence Data",
+        "publisher": "GBIF",
+        "url": "https://www.gbif.org/document/80512"
+      },
+      {
+        "citation": "Tulloch et al. 2018",
+        "title": "A decision tree for assessing the risks and benefits of publishing biodiversity data",
+        "journal": "Nature Ecology & Evolution"
+      },
+      {
+        "citation": "Lindenmayer & Scheele 2017",
+        "title": "Do not publish: limiting open-access information on rare and endangered species",
+        "journal": "Conservation Biology",
+        "doi": "10.1111/cobi.12947"
+      },
+      {
+        "citation": "Lowe et al. 2017",
+        "title": "Publish openly but responsibly",
+        "journal": "Science",
+        "doi": "10.1126/science.aao0054"
+      },
+      {
+        "citation": "GBIF 2023",
+        "title": "Sensitive Species Best Practices",
+        "url": "https://docs.gbif.org/sensitive-species-best-practices/master/en/"
+      },
+      {
+        "citation": "Androulaki et al. 2008",
+        "title": "Protecting location privacy with differential privacy",
+        "venue": "SIGKDD"
+      },
+      {
+        "citation": "Sweeney 2002",
+        "title": "k-anonymity: A model for protecting privacy",
+        "journal": "International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems",
+        "doi": "10.1142/S0218488502001648"
+      }
+    ],
+    "regulatory_context": [
+      {
+        "regulation": "GDPR",
+        "relevance": "Applies when biodiversity data includes human location patterns or observer information"
+      },
+      {
+        "regulation": "CBD Nagoya Protocol",
+        "relevance": "Access and benefit sharing requirements for genetic resources and traditional knowledge"
+      },
+      {
+        "regulation": "National sensitive species legislation",
+        "relevance": "Country-specific requirements for protecting locations of threatened species"
+      }
+    ],
+    "science_live_connection": {
+      "demonstration_purpose": "Showcase Science Live value proposition for organizations needing to select validated, application-ready PETs",
+      "templates_to_develop": [
+        "PET evaluation claim template",
+        "Privacy-utility trade-off documentation",
+        "Implementation feasibility assessment"
+      ],
+      "radar_categories": [
+        "Spatial generalization methods",
+        "Differential privacy implementations",
+        "Access control systems",
+        "Emerging cryptographic approaches"
+      ]
+    }
+  }
+}

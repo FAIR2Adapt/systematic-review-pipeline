@@ -1,0 +1,89 @@
+{
+  "author": {
+    "orcid": "0000-0002-1784-2920",
+    "name": "Anne Fouilloux"
+  },
+  "pico": {
+    "title": "Machine Learning Algorithms for Wildfire Detection and Burned Area Mapping Using Sentinel-2 Imagery: A Systematic Review",
+    "population": "Geographic regions affected by wildfires globally, with focus on areas where Sentinel-2 multispectral imagery has been applied for wildfire-related studies, including Mediterranean Europe, California, Australia, Canada, and other fire-prone ecosystems",
+    "intervention": "Machine learning and deep learning algorithms applied to Sentinel-2 multispectral imagery for wildfire applications, including convolutional neural networks (CNN, U-Net, ResNet, EfficientNet), random forest, support vector machines, gradient boosting methods, and attention-based architectures. Includes both uni-temporal and bi-temporal approaches, as well as fusion with Sentinel-1 SAR data",
+    "comparison": "Different ML/DL architectures compared against each other; comparison of input data configurations (spectral bands, indices, temporal features); validation approaches (cross-validation, independent test sets, spatial holdout); and where available, comparison with traditional remote sensing methods (thresholding, spectral indices)",
+    "outcome": "Algorithm performance metrics (accuracy, precision, recall, F1-score, IoU, overall accuracy, kappa coefficient), geographic transferability, computational requirements, input data requirements, code and model availability, and operational readiness for wildfire management applications",
+    "research_question": "What machine learning algorithms have been developed and validated for wildfire detection, risk prediction, and burned area mapping using Sentinel-2 imagery, and what are their reported performance metrics, geographic coverage, and application readiness?",
+    "question_type": "descriptive",
+    "rationale": "The increasing frequency and severity of wildfires under climate change demands effective monitoring tools. Sentinel-2, with its 10m resolution and 5-day revisit time, has become a key data source for wildfire applications. While numerous ML approaches have been published, there is no comprehensive systematic review mapping algorithm performance to geographic regions and datasets. This review will seed the Science Live platform with structured, queryable nanopublications to accelerate research-to-application transfer for wildfire management practitioners."
+  },
+  "output": {
+    "filename": "wildfire-sentinel2-ml-pico"
+  },
+  "metadata": {
+    "keywords": [
+      "wildfire detection",
+      "burned area mapping",
+      "fire risk prediction",
+      "Sentinel-2",
+      "machine learning",
+      "deep learning",
+      "convolutional neural networks",
+      "random forest",
+      "remote sensing",
+      "Earth observation",
+      "Copernicus"
+    ],
+    "related_work": [
+      {
+        "citation": "Jain et al. 2020",
+        "title": "A review of machine learning applications in wildfire science and management",
+        "journal": "Environmental Reviews",
+        "doi": "10.1139/er-2020-0019"
+      },
+      {
+        "citation": "Prapas et al. 2024",
+        "title": "Deep Learning Approaches for Wildfire Severity Prediction: EO4WildFires Dataset",
+        "note": "Benchmark dataset covering 45 countries, 31730 events (2018-2022)"
+      },
+      {
+        "citation": "Kondylatos et al. 2024",
+        "title": "California Wildfire GeoImaging Dataset (CWGID)",
+        "note": "100,000+ bi-temporal Sentinel-2 image pairs"
+      },
+      {
+        "citation": "Chen et al. 2024",
+        "title": "Comparative study of machine learning methods for mapping forest fire areas using Sentinel-1B and 2A imagery",
+        "journal": "Frontiers in Remote Sensing",
+        "doi": "10.3389/frsen.2024.1446641"
+      },
+      {
+        "citation": "Zhang et al. 2024",
+        "title": "Assessing Sentinel-2, Sentinel-1, and ALOS-2 PALSAR-2 data for large-scale wildfire-burned area mapping",
+        "journal": "Remote Sensing"
+      }
+    ],
+    "inclusion_criteria": [
+      "Studies using Sentinel-2 imagery (alone or in combination with other sensors)",
+      "Application of machine learning or deep learning algorithms",
+      "Focus on wildfire detection, burned area mapping, fire severity assessment, or fire risk prediction",
+      "Quantitative performance metrics reported",
+      "Peer-reviewed publications or preprints (2015-2025, aligned with Sentinel-2 availability)"
+    ],
+    "exclusion_criteria": [
+      "Studies using only non-Sentinel sensors (MODIS, Landsat only, etc.)",
+      "Reviews without original experimental results",
+      "Studies without quantitative performance evaluation",
+      "Non-English publications",
+      "Conference abstracts without full methodology"
+    ],
+    "databases": [
+      "Scopus",
+      "Web of Science",
+      "IEEE Xplore",
+      "Google Scholar (supplementary)"
+    ],
+    "esa_bic_relevance": {
+      "space_connection": "Direct use of ESA Copernicus Sentinel-2 satellite data",
+      "downstream_application": "Wildfire management, civil protection, insurance, climate adaptation",
+      "market_potential": "Climate services, precision forestry, emergency response",
+      "science_live_demo": "Queryable knowledge graph of validated algorithms by region and accuracy"
+    }
+  }
+}

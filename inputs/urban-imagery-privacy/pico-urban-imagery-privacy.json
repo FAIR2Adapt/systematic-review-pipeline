@@ -1,0 +1,135 @@
+{
+  "author": {
+    "orcid": "0000-0002-1784-2920",
+    "name": "Anne Fouilloux"
+  },
+  "pico": {
+    "title": "Privacy-Preserving Distribution of High-Resolution Urban Satellite and Aerial Imagery: A Scoping Review",
+    "population": "High-resolution (sub-meter to 30cm) satellite and aerial imagery of urban areas containing potentially identifiable features including vehicles, building details, rooftop installations, activity patterns, construction sites, and in some cases individuals, acquired by commercial satellite operators, aerial survey companies, and municipal authorities",
+    "intervention": "Privacy-preserving techniques for urban imagery distribution including automated anonymization (object detection and blurring, synthetic replacement, generative inpainting), access control frameworks (tiered licensing, user vetting, purpose limitation), resolution degradation protocols, temporal aggregation, and derivative product approaches (vector extraction, indices only)",
+    "comparison": "Different anonymization techniques compared against each other; anonymized vs. restricted-access vs. resolution-limited distribution models; automated vs. manual review processes",
+    "outcome": "Utility for urban analysis tasks (building detection, change monitoring, infrastructure mapping, urban growth modeling, disaster damage assessment), privacy protection effectiveness (re-identification prevention, sensitive facility protection), processing overhead and scalability, compliance with privacy regulations, and commercial viability of different distribution models",
+    "research_question": "For high-resolution satellite and aerial imagery of urban areas, how do different anonymization and access control approaches compare in enabling urban analytics applications while protecting identifiable features and complying with privacy regulations?",
+    "question_type": "effectiveness",
+    "rationale": "Commercial satellite imagery now achieves 30cm resolution where individual people, vehicles, and detailed building features are clearly visible. Urban planners, emergency responders, researchers, and smart city applications increasingly demand this high-resolution data. However, privacy regulations (GDPR, state-level US laws) increasingly apply to imagery containing identifiable individuals or enabling inference of personal activities. The tension between analytical utility and privacy protection requires evidence-based approaches to imagery distribution that the market currently lacks."
+  },
+  "sub_questions": [
+    {
+      "id": "SQ1",
+      "title": "Automated Anonymization Effectiveness",
+      "population": "Sub-meter satellite and aerial imagery of urban areas",
+      "intervention": "Deep learning-based object detection and anonymization (vehicle blurring, face detection, license plate masking, rooftop pool/installation blurring)",
+      "comparison": "Different detection models (YOLO, Faster R-CNN, specialized urban models); blurring vs. synthetic replacement vs. removal",
+      "outcome": "Detection recall for sensitive objects, false positive rate, impact on downstream urban analysis tasks, processing speed and cost",
+      "research_question": "How effective are automated deep learning approaches at detecting and anonymizing privacy-sensitive features in high-resolution urban imagery, and what residual risks remain?"
+    },
+    {
+      "id": "SQ2",
+      "title": "Resolution-Utility Trade-offs",
+      "population": "High-resolution urban imagery used for building detection, change monitoring, and infrastructure mapping",
+      "intervention": "Systematic resolution degradation (30cm → 50cm → 1m → 2m → 5m)",
+      "comparison": "Original resolution vs. degraded versions across multiple urban analysis tasks",
+      "outcome": "Task-specific accuracy degradation curves, minimum resolution requirements for different applications, privacy protection at each resolution level",
+      "research_question": "What is the relationship between spatial resolution reduction and utility loss for common urban remote sensing tasks, and at what resolution does meaningful privacy protection begin?"
+    },
+    {
+      "id": "SQ3",
+      "title": "Access Control Model Effectiveness",
+      "population": "Organizations distributing high-resolution urban imagery (commercial providers, government agencies, research data centers)",
+      "intervention": "Tiered access control systems (public/research/government tiers, purpose-based licensing, user vetting procedures)",
+      "comparison": "Open distribution, single-tier restricted access, multi-tier systems",
+      "outcome": "Compliance verification effectiveness, data misuse incidents, administrative burden, researcher access friction, commercial revenue impact",
+      "research_question": "How do different access control models for high-resolution urban imagery compare in preventing misuse while enabling legitimate research and operational applications?"
+    }
+  ],
+  "output": {
+    "filename": "pico-urban-imagery-privacy"
+  },
+  "metadata": {
+    "keywords": [
+      "high-resolution imagery",
+      "urban remote sensing",
+      "image anonymization",
+      "satellite imagery privacy",
+      "object detection",
+      "smart cities",
+      "urban planning",
+      "aerial imagery",
+      "VHR satellite data",
+      "building detection"
+    ],
+    "target_domains": [
+      "Earth Observation",
+      "Urban Planning",
+      "Smart Cities",
+      "Disaster Response",
+      "Infrastructure Monitoring",
+      "Real Estate Analytics"
+    ],
+    "stakeholders": [
+      "Commercial satellite operators (Maxar, Planet, Airbus)",
+      "Aerial survey companies",
+      "Municipal governments and planning departments",
+      "Smart city platform providers",
+      "Real estate and property analytics companies",
+      "Insurance companies (property assessment)",
+      "Emergency response agencies",
+      "Academic urban researchers",
+      "Privacy advocacy organizations"
+    ],
+    "related_work": [
+      {
+        "citation": "Maxar/Google",
+        "title": "Automated blurring in Google Maps satellite view",
+        "note": "Operational deployment of face/license plate blurring"
+      },
+      {
+        "citation": "Tao et al. 2021",
+        "title": "Privacy-Preserving Techniques in Smart City Applications",
+        "journal": "IEEE Internet of Things Journal"
+      },
+      {
+        "citation": "Kwan 2016",
+        "title": "Algorithmic Geographies: Big Data, Algorithmic Uncertainty, and the Production of Geographic Knowledge",
+        "journal": "Annals of the American Association of Geographers"
+      },
+      {
+        "citation": "Zhu et al. 2017",
+        "title": "Deep Learning in Remote Sensing: A Comprehensive Review and List of Resources",
+        "journal": "IEEE Geoscience and Remote Sensing Magazine"
+      }
+    ],
+    "regulatory_context": [
+      {
+        "regulation": "GDPR",
+        "relevance": "Imagery of identifiable individuals constitutes personal data; inference of activities from property observation may also apply"
+      },
+      {
+        "regulation": "California Consumer Privacy Act (CCPA)",
+        "relevance": "May apply to imagery-derived data about California residents and properties"
+      },
+      {
+        "regulation": "US FAA drone regulations",
+        "relevance": "Privacy considerations for low-altitude aerial imagery increasingly addressed"
+      },
+      {
+        "regulation": "National security imagery restrictions",
+        "relevance": "Many countries restrict distribution of imagery showing sensitive facilities"
+      }
+    ],
+    "science_live_connection": {
+      "demonstration_purpose": "Help commercial imagery providers and urban analytics companies select validated anonymization and distribution approaches",
+      "templates_to_develop": [
+        "Anonymization effectiveness evaluation template",
+        "Resolution-utility trade-off documentation",
+        "Access control model assessment template"
+      ],
+      "radar_categories": [
+        "Automated object detection for anonymization",
+        "Generative inpainting approaches",
+        "Resolution degradation protocols",
+        "Access control frameworks"
+      ]
+    }
+  }
+}
