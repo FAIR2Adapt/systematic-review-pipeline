@@ -1,0 +1,85 @@
+{
+  "author": {
+    "orcid": "0000-0002-1784-2920",
+    "name": "Anne Fouilloux"
+  },
+  "search_strategy": {
+    "label": "Privacy-Enhancing Technologies for Geospatial Biodiversity Data Sharing - Literature Search",
+    "part_of": "https://w3id.org/np/RAqmVeNbWgL7sNtsr9GqdX0ZTa6aQf3itQmort-JMy4tM",
+    "databases": [
+      "https://arxiv.org/",
+      "https://www.semanticscholar.org/",
+      "https://openalex.org/"
+    ],
+    "search_terms": [
+      {
+        "uri": "https://www.wikidata.org/wiki/Q124749157",
+        "label": "geo-privacy"
+      },
+      {
+        "uri": "https://www.wikidata.org/wiki/Q5275358",
+        "label": "differential privacy"
+      },
+      {
+        "uri": "https://www.wikidata.org/wiki/Q17061432",
+        "label": "k-anonymity"
+      },
+      {
+        "uri": "https://www.wikidata.org/wiki/Q2465888",
+        "label": "secure multi-party computation"
+      },
+      {
+        "uri": "https://www.wikidata.org/wiki/Q17006654",
+        "label": "data anonymization"
+      },
+      {
+        "uri": "https://www.wikidata.org/wiki/Q2154943",
+        "label": "homomorphic encryption"
+      },
+      {
+        "uri": "https://www.wikidata.org/wiki/Q47041",
+        "label": "biodiversity"
+      },
+      {
+        "uri": "https://www.wikidata.org/wiki/Q123701967",
+        "label": "species occurrence"
+      },
+      {
+        "uri": "https://www.wikidata.org/wiki/Q1531570",
+        "label": "GBIF"
+      },
+      {
+        "uri": "https://www.wikidata.org/wiki/Q122175981",
+        "label": "species distribution model"
+      }
+    ],
+    "search_groups": {
+      "privacy_methods": [
+        "geo-privacy",
+        "geoprivacy",
+        "differential privacy",
+        "k-anonymity",
+        "secure multi-party computation",
+        "data anonymization",
+        "homomorphic encryption"
+      ],
+      "biodiversity": [
+        "biodiversity",
+        "species occurrence",
+        "GBIF",
+        "species distribution model"
+      ]
+    },
+    "time_period": {
+      "start": "2010-01-01",
+      "end": "2026-01-01"
+    },
+    "languages": [
+      "http://id.loc.gov/vocabulary/iso639-1/en"
+    ],
+    "methodology_notes": "Search strategy for scoping review on privacy-enhancing technologies applicable to geospatial biodiversity data. All terms backed by Wikidata URIs. Removed broad terms (blockchain, federated learning, trusted execution environment) that matched non-privacy papers. Boolean operators: (geo-privacy OR geoprivacy OR differential privacy OR k-anonymity OR secure multi-party computation OR data anonymization OR homomorphic encryption) AND (biodiversity OR species occurrence OR GBIF OR species distribution model). Date restriction: 2010-present. Language: English only."
+  },
+  "output": {
+    "filename": "privacy-pet-biodiversity-search-strategy"
+  }
+}
